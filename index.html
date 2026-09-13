@@ -56,6 +56,11 @@
   }
   a.card .title { font-weight: 700; font-size: 1.1rem; margin-bottom: 4px; }
   a.card .desc { color: var(--muted); font-size: 0.9rem; }
+  a.card.support {
+    border-color: rgba(233,69,96,0.4);
+    background: linear-gradient(135deg, rgba(233,69,96,0.12), rgba(15,52,96,0.3));
+  }
+  a.card.support:hover { border-color: var(--accent); }
 </style>
 </head>
 <body>
@@ -69,6 +74,10 @@
   <a class="card" href="printable.html">
     <div class="title">🖨️ Printable Map</div>
     <div class="desc">Letter-size labeled map with legend and mile scale bar</div>
+  </a>
+  <a class="card support" href="https://paypal.me/watsonism" target="_blank" rel="noopener">
+    <div class="title">💛 Support this project</div>
+    <div class="desc">If this was useful, you can send a tip via PayPal</div>
   </a>
 </div>
 </body>
