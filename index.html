@@ -61,6 +61,14 @@
     background: linear-gradient(135deg, rgba(233,69,96,0.12), rgba(15,52,96,0.3));
   }
   a.card.support:hover { border-color: var(--accent); }
+  .source-attribution {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  .source-attribution a { color: var(--muted); text-decoration: underline; }
+  .source-attribution a:hover { color: var(--text); }
 </style>
 </head>
 <body>
@@ -75,6 +83,9 @@
     <div class="title">🖨️ Printable Map</div>
     <div class="desc">Letter-size labeled map with legend and mile scale bar</div>
   </a>
+  <div class="source-attribution">
+    Map source: <a href="https://www.murfreesborotn.gov/ImageRepository/Document?documentId=19494" target="_blank" rel="noopener">City of Murfreesboro</a>
+  </div>
   <a class="card support" href="https://paypal.me/watsonism" target="_blank" rel="noopener">
     <div class="title">💛 Support this project</div>
     <div class="desc">If this was useful, you can send a tip via PayPal</div>
