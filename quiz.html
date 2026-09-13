@@ -186,11 +186,36 @@
   .score-screen .big-score { font-size: 4rem; font-weight: 800; color: var(--accent); }
   .score-screen p { color: var(--muted); margin-bottom: 20px; }
   .hidden { display: none; }
+  .support-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(233,69,96,0.12);
+    border: 1px solid rgba(233,69,96,0.4);
+    color: var(--text, #eee);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+  }
+  .support-link:hover { border-color: var(--accent, #e94560); background: rgba(233,69,96,0.2); }
+  .support-cta {
+    text-align: center;
+    padding: 20px;
+    margin-top: 12px;
+    border-radius: 12px;
+    background: rgba(233,69,96,0.1);
+    border: 1px solid rgba(233,69,96,0.35);
+  }
+  .support-cta p { color: var(--muted, #aaa); margin-bottom: 12px; }
 </style>
 </head>
 <body>
 <h1>Tennessee Physiographic Regions</h1>
 <p class="subtitle">Click and find quiz — built with vector SVG</p>
+<a class="support-link" href="https://paypal.me/watsonism" target="_blank" rel="noopener">💛 Support this project</a>
 
 <div class="quiz-container">
   <div id="quiz-area">
@@ -222,6 +247,10 @@
     <div class="big-score" id="final-score">0/13</div>
     <p id="final-msg"></p>
     <button class="btn-primary" id="play-again-btn">Play Again</button>
+    <div class="support-cta">
+      <p>Enjoyed the quiz? Consider supporting the project.</p>
+      <a class="support-link" href="https://paypal.me/watsonism" target="_blank" rel="noopener">💛 Support via PayPal</a>
+    </div>
   </div>
 </div>
 
